@@ -24,7 +24,7 @@ class GameScene extends Phaser.Scene {
 
     this.load.image('starBackground', 'assets/starBackground.png')
     this.load.image('ship', 'assets/spaceShip.png')
-    this.load.image('missle', 'assets/missile.png')
+    this.load.image('missile', 'assets/missile.png')
   }
 
   create(data) {
@@ -43,7 +43,7 @@ class GameScene extends Phaser.Scene {
 
     const keyLeftObj = this.input.keyboard.addKey('LEFT')
     const keyRightObj = this.input.keyboard.addKey('RIGHT')
-    const keySpaceObj = this.input.jeyboard.addKey('SPACE')
+    const keySpaceObj = this.input.keyboard.addKey('SPACE')
 
     if (keyLeftObj.isDown === true) {
       this.ship.x -= 15
